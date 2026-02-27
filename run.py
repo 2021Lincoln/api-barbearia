@@ -30,9 +30,6 @@ import uvicorn
 import os
 
 if __name__ == "__main__":
-    # O Render fornece a porta na variável de ambiente PORT, se não existir, usa 8000
     port = int(os.environ.get("PORT", 8000))
-    
-    # Importante: se o Root Directory for 'backend', o nome aqui é 'main:app'
-    # Se o Root Directory for a raiz, o nome é 'backend.main:app'
-    uvicorn.run("main:app", host="0.0.0.0", port=port)
+    # Alteramos de "main:app" para "backend.main:app"
+    uvicorn.run("backend.main:app", host="0.0.0.0", port=port)
