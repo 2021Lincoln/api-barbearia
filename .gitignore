@@ -1,0 +1,64 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Ambiente virtual
+venv/
+.venv/
+env/
+.env.local
+.env.*.local
+
+# Banco de dados SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# ─── Variaveis de ambiente ────────────────────────────────────────────────────
+# .env contem SECRET_KEY, chaves de API — nunca commitar
+.env
+
+# ─── Node / React / Vite ──────────────────────────────────────────────────────
+node_modules/
+dist/
+.cache/
+*.tsbuildinfo
+
+# Vite
+admin-web/dist/
+
+# ─── Expo / React Native ──────────────────────────────────────────────────────
+mobile/.expo/
+mobile/dist/
+mobile/web-build/
+mobile/android/
+mobile/ios/
+*.apk
+*.aab
+*.ipa
+
+# ─── Logs ─────────────────────────────────────────────────────────────────────
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ─── Editores ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ─── Claude Code ──────────────────────────────────────────────────────────────
+.claude/

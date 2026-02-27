@@ -1,0 +1,35 @@
+{
+  "expo": {
+    "name": "BarberApp",
+    "slug": "barberapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "scheme": "barberapp",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.barberapp",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Usamos sua localização para encontrar barbearias próximas."
+      }
+    },
+    "android": {
+      "package": "com.barberapp",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ]
+    },
+    "plugins": [
+      "expo-location"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "4c635e43-9838-461e-b398-252d8fdd35cb"
+      }
+    },
+    "owner": "12345678900"
+  }
+}
